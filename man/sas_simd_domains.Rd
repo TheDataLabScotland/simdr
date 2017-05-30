@@ -29,6 +29,7 @@ sas_simd_domains
 }
 \description{
 The published ranks of the individual domains and the overall SIMD rank for 2016 calculated in SAS.
+The highest ranked data zones are the most deprived geographic areas.
 We include this data for the purposes of measuring the correspondence of ranks calculated in R with ranks calculated in SAS.
 }
 \details{
