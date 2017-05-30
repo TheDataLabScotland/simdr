@@ -4,8 +4,7 @@ Title: Calculating the Scottish Index of Multiple Deprivation
 Version: 0.1.0
 Author: Roman Popat
 Maintainer: The package maintainer <roman@legibledata.org>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Data and functions to calculate the Scottish Index of Multiple Deprivation from 7 different indicator domains.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
