@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TheDataLabScotland/simdr.svg?branch=master](https://travis-ci.org/TheDataLabScotland/simdr)
+
 An R package to perform the calculation of the Scottish Index of Multiple Deprivation
 
 You can install this package with
