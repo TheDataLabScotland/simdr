@@ -1,14 +1,59 @@
 #' Factor analysis weights derived from SAS
 #'
-#' [describe it here]
+#' We include the Factor Analysis weights calculated in SAS from the 2016 SIMD calculations.
+#' This is mostly for quality control evaluating the correspondence between the SAS and R methodologies.
+#' To see our quality control analysis see [quality assurance section of the openSIMD documentation](https://thedatalabscotland.github.io/openSIMD_site/QA.html)
 #'
 #' Please see the technical notes \url{http://www.gov.scot/Resource/0050/00504822.pdf} for full information on all of the data in SIMD.
 #'
-#' @format A data frame with ___ rows and ___ variables:
+#' @format A data frame with 1 rows and 43 variables:
 #' \describe{
-#'   \item{variable}{description}
-#'   \item{}{Count of individuals with no qualifications}
-#'   \item{}{Normalised count, derived from SIMD proceedure in SAS}
+#'
+#'   \item{n_neet}{}
+#'   \item{n_noquals}{}
+#'   \item{n_attain}{}
+#'   \item{n_attend}{}
+#'   \item{n_hesa}{}
+#'   \item{n_cif}{}
+#'   \item{n_smr}{}
+#'   \item{n_lbwt}{}
+#'   \item{n_drug}{}
+#'   \item{n_alc}{}
+#'   \item{n_depress}{}
+#'   \item{n_emerg}{}
+#'   \item{n_dr_gp}{}
+#'   \item{n_dr_post}{}
+#'   \item{n_dr_prim}{}
+#'   \item{n_dr_sec}{}
+#'   \item{n_dr_retail}{}
+#'   \item{n_dr_petrol}{}
+#'   \item{n_pt_gp}{}
+#'   \item{n_pt_post}{}
+#'   \item{n_pt_retail}{}
+#'
+#'   \item{wt_neet}{}
+#'   \item{wt_noquals}{}
+#'   \item{wt_attain}{}
+#'   \item{wt_attend}{}
+#'   \item{wt_hesa}{}
+#'   \item{wt_cif}{}
+#'   \item{wt_smr}{}
+#'   \item{wt_lbwt}{}
+#'   \item{wt_drug}{}
+#'   \item{wt_alc}{}
+#'   \item{wt_depress}{}
+#'   \item{wt_emerg}{}
+#'   \item{wt_dr_gp}{}
+#'   \item{wt_dr_post}{}
+#'   \item{wt_dr_prim}{}
+#'   \item{wt_dr_sec}{}
+#'   \item{wt_dr_retail}{}
+#'   \item{wt_dr_petrol}{}
+#'   \item{wt_pt_gp}{}
+#'   \item{wt_pt_post}{}
+#'   \item{wt_pt_retail}{}
+#'
+#'   \item{n}{}
 #'   ...
 #' }
 #' @source \url{http://www.gov.scot/Topics/Statistics/SIMD}

@@ -14,12 +14,14 @@
 #'
 #' @keywords SIMD, openSIMD, simdr
 #'
+#' @import dplyr
+#'
 #' @export
 getFAWeights <- function(dat, ...) {
 
   fact <- psych::fa(dat, nfactors = 1, fm = "ml", rotate = "none", ...)
 
-  f1_scores <- as.data.frame(fact$weights) %>% select(ML1)
+  f1_scores <- as.data.frame(fact$weights) %>% select("ML1")
 
   f1_weights <- f1_scores / sum(f1_scores)
 
