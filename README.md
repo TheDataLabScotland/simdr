@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/TheDataLabScotland/simdr.svg?branch=master)](https://travis-ci.org/TheDataLabScotland/simdr)
+[![Build Status](https://api.travis-ci.org/rmnppt/simdr.svg?branch=master)
 
 An R package to perform the calculation of the Scottish Index of Multiple Deprivation
 
