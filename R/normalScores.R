@@ -29,6 +29,8 @@
 #' # (not run)
 #' # PUT SOME CODE HERE
 #'
+#' @importFrom stats na.omit qnorm
+#'
 #' @export
 
 normalScores <- function(
