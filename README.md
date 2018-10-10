@@ -6,7 +6,7 @@
 
 You can install this package with
 
-```{r}
+```R
 devtools::install_github("rmnppt/simdr")
 ```
 
@@ -14,13 +14,13 @@ devtools::install_github("rmnppt/simdr")
 
 You can load in the 2016 simd domain data as follows:
 
-```{r}
+```R
 data("simd16_domains")
 ```
 
 Or you might want to view  the more granular indicator data:
 
-```{r}
+```R
 data("simd16_indicators")
 ```
 
@@ -32,7 +32,7 @@ If you want to analyse the data in the way that the SIMD team does you can start
 
 Here is an example using education:
 
-```{r}
+```R
 library(dplyr)
 
 normalised_education <- simd16_indicators %>% # start with the raw data
@@ -51,19 +51,19 @@ Notice that when we call `normalScores` we can decide whether a high value indic
 
 When combining the indicators to give a domain score, we need to apply a different weight to each. The weights are derived through factor analysis of the normalised indicator scores, and the proportional loadings on factor 1 serve as the weightings. We extract the loadings using the getFAWeights function as follows:
 
-```{r}
+```R
 education_weights <- getFAWeights(normalised_education)
 ```
 
 Now that we have the normalised indicator scores and weights, we can combine them with the utility function `combineWeightsAndNorms`. Each normalised indicator variable is multiplied by its weight derived from factor analysis, as follows:
 
-```{r}
+```R
 education_score <- combineWeightsAndNorms(education_weights, normalised_education)
 ```
 
 Finally we rank these weighted scores to generate the domain rank (1 = most deprived).
 
-```{r}
+```R
 education_rank <- rank(-education_score)
 ```
 
